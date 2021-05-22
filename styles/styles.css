@@ -20,9 +20,12 @@ body{
     width: 100vh;
     height: 100vh;
     display: flex;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-gap :7rem; */
-    padding: 0 2rem;
+}
+.info{
+	color: white;
+	text-decoration: none;
+	padding-left: -35vh;
+	float: left;
 }
 
 .img img{
@@ -67,7 +70,7 @@ form{
 }
 
 .i{
-	color: #d9d9d9;
+	color: #4C4C78;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -87,7 +90,7 @@ form{
 	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
-	color: #999;
+	color: #4C4C78;
 	font-size: 18px;
 	transition: .3s;
 }
@@ -146,7 +149,7 @@ a{
 	display: block;
 	text-align: right;
 	text-decoration: none;
-	color: #999;
+	color: #4C4C78;
 	font-size: 0.9rem;
 	transition: .3s;
 }
@@ -162,7 +165,7 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-image: linear-gradient(to right, #4C4C78, #4C4C78, #4C4C78);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
@@ -174,44 +177,5 @@ a:hover{
 }
 .btn:hover{
 	background-position: right;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 2);
 }
-/* 
-
-@media screen and (max-width: 1050px){
-	.container{
-		grid-gap: 5rem;
-	}
-}
-
-@media screen and (max-width: 1000px){
-	form{
-		width: 290px;
-	}
-
-	.login-content h2{
-        font-size: 2.4rem;
-        margin: 8px 0;
-	}
-
-	.img img{
-		width: 400px;
-	}
-}
-
-@media screen and (max-width: 900px){
-	.container{
-		grid-template-columns: 1fr;
-	}
-
-	.img{
-		display: none;
-	}
-
-	.wave{
-		display: none;
-	}
-
-	.login-content{
-		justify-content: center;
-	}
-} */
