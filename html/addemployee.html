@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-    <title>add customer</title>
+    <title>add Employee</title>
     <style>
         * {
             padding: 0;
@@ -60,7 +60,7 @@
         }
 
 
-        .form-control{
+        .form-control {
             font-family: 'Poppins', sans-serif;
             width: 255px;
 
@@ -97,7 +97,8 @@
             background-position: right;
             box-shadow: 0 0 10px rgba(0, 0, 0, 2);
         }
-        .cancel{
+
+        .cancel {
             display: block;
             margin-right: 15px;
             width: 50%;
@@ -115,9 +116,28 @@
             cursor: pointer;
             transition: .5s;
         }
-        .cancel:hover{
+
+        .cancel:hover {
             background-position: right;
             box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+        }
+        .status{
+            width: 600px;
+            width: 255px;
+            padding: 10px 10px 15px 0px;
+            font-size: 1.3rem;
+        }
+        #cars{
+            font-family: 'Poppins', sans-serif;
+            width: 600px;
+            width: 255px;
+            padding: 10px 10px 15px 0px;
+            font-size: 1.3rem;
+            color: gray;
+
+        }
+        #cars option{
+            color: black;
         }
     </style>
 </head>
@@ -136,10 +156,17 @@
                 <div class="Email">
                     <input type="text" class="email" placeholder="Email">
                 </div>
-
-
+                <div class="status">
+                    <select id="cars">
+                        <option class="hidden" value="" disabled selected hidden>Status</option>
+                        <option value="manager">Manager</option>
+                        <option value="chef">Chef</option>
+                        <option value="waiter">Waiter</option>
+                        <option value="recep">Receptionist</option>
+                    </select>
+                </div>
                 <button class="submit" type="submit"> Add</button>
-                <button class="cancel" type="cancel" >Cancel</button>
+                <button class="cancel" type="cancel">Cancel</button>
             </form>
         </div>
     </div>
