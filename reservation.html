@@ -38,66 +38,49 @@
         }
 
         .name {
-            position: relative;
-            /* grid-template-columns: 7% 93%; */
-            margin: 25px 0;
-            padding: 5px 0;
-            border:none;
-            border-radius: 5px;
-
-        }
-
-        .name:before,
-        .name:after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            width: 0%;
-            height: 2px;
-            background-color: #38d39f;
-            transition: .4s;
-        }
-        .name:before{
-            right: 50%;
-        }
-        .name:after{
-            left: 50%;
-        }
-        .name:before,
-        .name:after
-        {
-            width: 50%;
+            font-family: 'Poppins', sans-serif;
+            width: 255px;
+            margin-bottom: -5px;
+            padding: 10px 10px 10px 0px;
         }
 
         .contact {
-            position: relative;
-            /* grid-template-columns: 7% 93%; */
-            border: none;
-            border-bottom: 2px solid #d9d9d9;
+            font-family: 'Poppins', sans-serif;
+            width: 255px;
+            padding: 10px 10px 10px 0px;
         }
 
         .email {
-            position: relative;
-            /* grid-template-columns: 7% 93%; */
-            border: none;
-            border-bottom: 2px solid #d9d9d9;
+            font-family: 'Poppins', sans-serif;
+            width: 255px;
 
+            padding: 10px 10px 10px 0px;
         }
 
         .people {
-            position: relative;
-            /* grid-template-columns: 7% 93%; */
-            margin: 25px 0;
-            padding: 5px 0;
-            border: none;
-            border-bottom: 2px solid #d9d9d9;
+            font-family: 'Poppins', sans-serif;
+            width: 255px;
+
+            padding: 10px 10px 10px 0px;
         }
 
         .time {
-            position: relative;
-            /* grid-template-columns: 7% 93%; */
-            border: none;
-            border-bottom: 2px solid #d9d9d9;
+            font-family: 'Poppins', sans-serif;
+            width: 255px;
+
+            padding: 10px 10px 10px 0px;
+        }
+        .message{
+            font-family: 'Poppins', sans-serif;
+            width: 255px;
+
+            padding: 10px 10px 10px 0px;
+        }
+        .form-control{
+            font-family: 'Poppins', sans-serif;
+            width: 255px;
+
+            padding: 10px 10px 10px 0px;
         }
 
         form {
@@ -141,17 +124,21 @@
                     <input type="text" class="name" placeholder="Name">
                 </div>
                 <div class="contact">
-                    <input type="text" class="contact" placeholder="030-xxxxxx">
+                    <input type="text" class="contact" placeholder="Contact No">
                 </div>
                 <div class="Email">
-                    <input type="text" class="email" placeholder="abc@gmail.com">
+                    <input type="text" class="email" placeholder="Email">
                 </div>
                 <div class="people">
                     <input type="number" class="people" placeholder="How many people">
                 </div>
-                <p><input class="time" type="datetime-local" placeholder="Date and time" required name="date"
+                <p><input class="time" type="datetime-local" placeholder="schedule" required name="date"
                         value="2020-11-16T20:00">
                 </p>
+                <div class="message">
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="4"
+                        placeholder="Write your message"></textarea>
+                </div>
 
                 <button class="submit" type="submit"> Book Reservation</button>
             </form>
