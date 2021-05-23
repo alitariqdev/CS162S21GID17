@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <title>Reservation</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        .containers {
+            display: flex;
+        }
+
+        .image {
+            display: flex;
+            margin-top: 25%;
+            height: 65vh;
+        }
+
+        .right-container h2 {
+            padding-top: 45%;
+            margin: 15px 0;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+        .name {
+            position: relative;
+            /* grid-template-columns: 7% 93%; */
+            margin: 25px 0;
+            padding: 5px 0;
+            border:none;
+            border-radius: 5px;
+
+        }
+
+        .name:before,
+        .name:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            width: 0%;
+            height: 2px;
+            background-color: #38d39f;
+            transition: .4s;
+        }
+        .name:before{
+            right: 50%;
+        }
+        .name:after{
+            left: 50%;
+        }
+        .name:before,
+        .name:after
+        {
+            width: 50%;
+        }
+
+        .contact {
+            position: relative;
+            /* grid-template-columns: 7% 93%; */
+            border: none;
+            border-bottom: 2px solid #d9d9d9;
+        }
+
+        .email {
+            position: relative;
+            /* grid-template-columns: 7% 93%; */
+            border: none;
+            border-bottom: 2px solid #d9d9d9;
+
+        }
+
+        .people {
+            position: relative;
+            /* grid-template-columns: 7% 93%; */
+            margin: 25px 0;
+            padding: 5px 0;
+            border: none;
+            border-bottom: 2px solid #d9d9d9;
+        }
+
+        .time {
+            position: relative;
+            /* grid-template-columns: 7% 93%; */
+            border: none;
+            border-bottom: 2px solid #d9d9d9;
+        }
+
+        form {
+            padding-left: 130px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            background-image: linear-gradient(to right, #4C4C78, #4C4C78, #4C4C78);
+            background-size: 200%;
+            font-size: 1.2rem;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            margin: 1rem 0;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        button:hover {
+            background-position: right;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containers">
+        <div class="left-container">
+            <img class="image" src="./images/reservation.png" alt="reservation">
+        </div>
+        <div class=" right-container">
+            <form action="reservation.html">
+                <h2>Reservation</h2>
+                <div class="name">
+                    <input type="text" class="name" placeholder="Name">
+                </div>
+                <div class="contact">
+                    <input type="text" class="contact" placeholder="030-xxxxxx">
+                </div>
+                <div class="Email">
+                    <input type="text" class="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="people">
+                    <input type="number" class="people" placeholder="How many people">
+                </div>
+                <p><input class="time" type="datetime-local" placeholder="Date and time" required name="date"
+                        value="2020-11-16T20:00">
+                </p>
+
+                <button class="submit" type="submit"> Book Reservation</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
