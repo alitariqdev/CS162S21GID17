@@ -9,13 +9,6 @@ body{
     overflow: hidden;
 }
 
-.wave{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	z-index: -1;
-}
 
 .container{
     width: 100vw;
@@ -157,7 +150,7 @@ a{
 }
 
 a:hover{
-	color: #38d39f;
+	color: #4C4C78;
 }
 
 .btn{
@@ -179,6 +172,7 @@ a:hover{
 }
 .btn:hover{
 	background-position: right;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 2);
 }
 
 
