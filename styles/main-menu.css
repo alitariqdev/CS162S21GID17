@@ -1,0 +1,161 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: #8366D7;
+  padding-bottom: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar .logo h1{
+  padding-top: -20px;
+}
+
+.navbar li {
+  padding-top: 5px;
+  padding-right: 50px;
+  list-style: none;
+
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  padding-top: -40px;
+}
+
+.navbar li a:hover {
+  color: black;
+  transition: .4s;
+}
+
+.logo h1 a {
+  text-decoration: none;
+  color: white;
+  padding-left: 40px;
+  padding-right: 100px;
+}
+
+.logo h1 a:hover {
+  color: black;
+  transition: .4s;
+}
+
+.btn1 {
+  width: 100px;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn2 {
+  width: 100px;
+  border: none;
+  margin-right: 20px;
+  margin-left: 5px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: black;
+  color: white;
+  transition: .4s;
+}
+
+.btn2:hover {
+  background-color: white;
+  color: black;
+  transition: .4s;
+}
+
+.foot {
+  display: flex;
+  margin: 50px 30px 30px 50px;
+  padding: 20px 30px 20px 30px;
+  background-color: #F8F8FA;
+  justify-content: space-around;
+}
+
+.box5 {
+  padding: 40px 30px 30px 30px;
+}
+
+.box5 p {
+  padding-top: 20px;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.logo2 {
+  padding-top: 30px;
+}
+
+.logo2 img {
+  border: 2px solid #F8F8FA;
+  margin-right: 30px;
+  background-color: lightgray;
+  color: gray;
+  height: 3vh;
+}
+
+.box6 {
+  padding: 40px 30px 0px 100px;
+}
+
+.box6 a {
+  padding-top: 40px;
+  text-decoration: none;
+  color: grey;
+}
+
+.box7 {
+  padding: 40px 30px 0px 150px;
+}
+
+.box7 a {
+  padding-top: 40px;
+  text-decoration: none;
+  color: grey;
+}
+
+.box8 {
+  padding: 40px 30px 0px 150px;
+}
+
+.box8 a {
+  padding-top: 40px;
+  text-decoration: none;
+  color: grey;
+}
+.copyright p{
+  margin-top: -65px;
+  text-align: center;
+  color: gray;
+}
