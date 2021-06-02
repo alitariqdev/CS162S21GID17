@@ -15,6 +15,9 @@ namespace RestaurantManagementSystem.Controllers
         }  public ActionResult ListOfBranches()
         {
             return View();
+        } public ActionResult About()
+        {
+            return View();
         }
     }
 }
