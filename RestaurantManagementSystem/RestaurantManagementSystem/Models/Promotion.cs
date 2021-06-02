@@ -7,5 +7,6 @@ namespace RestaurantManagementSystem.Models
 {
     public class Promotion
     {
+        public String Deals { get; set; }
     }
 }
