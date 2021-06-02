@@ -140,8 +140,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Bill.cs" />
     <Compile Include="Models\Branch.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\MenuSection.cs" />
+    <Compile Include="Models\OnlineOrder.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\Restaurant.cs" />
+    <Compile Include="Models\Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -182,7 +195,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Branch\AddBranch.cshtml" />
     <Content Include="Views\Branch\ListOfBranches.cshtml" />
+
     <Content Include="Views\AccountPage\Login.cshtml" />
+ <Content Include="Views\Branch\About.cshtml" />
+705796d8ccf74547af0ac45275772c0e51363e74
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
