@@ -168,3 +168,7 @@ U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\Restaur
 U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\bin\roslyn\vbc.rsp
 U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\bin\roslyn\VBCSCompiler.exe
 U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csprojAssemblyReference.cache
+D:\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.CoreCompileInputs.cache
+D:\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.dll
+D:\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.pdb

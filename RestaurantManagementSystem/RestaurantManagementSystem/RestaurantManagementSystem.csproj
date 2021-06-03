@@ -139,8 +139,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Bill.cs" />
     <Compile Include="Models\Branch.cs" />
+
     <Compile Include="Models\Payment.cs" />
+
+    <Compile Include="Models\CashPayment.cs" />
+ 6cc452055a7a40abe6d500b16f2c17c809aeccf4
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
