@@ -140,18 +140,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Branch.cs" />
-    <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\Menu.cs" />
-    <Compile Include="Models\MenuItem.cs" />
-    <Compile Include="Models\MenuSection.cs" />
-    <Compile Include="Models\Notification.cs" />
-    <Compile Include="Models\OnlineOrder.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\OrderNotification.cs" />
-    <Compile Include="Models\Payment.cs" />
-    <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\Promotion.cs" />
-    <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
