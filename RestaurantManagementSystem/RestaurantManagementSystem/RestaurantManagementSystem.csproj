@@ -140,10 +140,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Branch.cs" />
-
-    <Compile Include="Models\CardPayment.cs" />
-    <Compile Include="Models\CashPayment.cs" />
-    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\MenuItem.cs" />
@@ -198,8 +194,6 @@
     <Content Include="Views\Branch\AddBranch.cshtml" />
     <Content Include="Views\Branch\ListOfBranches.cshtml" />
     <Content Include="Views\AccountPage\Login.cshtml" />
-    <Content Include="Views\Branch\About.cshtml" />
-
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
