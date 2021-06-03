@@ -4,95 +4,39 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @*@Styles.Render("~/Content/css")*@
-    @Styles.Render("~/Content/main-menu.css")
+    @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-
 </head>
 <body>
-
-
-
-
-    <div class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <h1> <a href="index.html">B & B</a></h1>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <ul class="navopt">
-                <li><a href="">Business</a> </li>
-                <li><a href="">Pricing</a> </li>
-                <li><a href="">Features</a> </li>
-                <li><a href="">About</a> </li>
-            </ul>
-            <div class="btns">
-                <button type="submit" class="btn1">Login</button>
-                <button type="submit" class="btn2">Sign up</button>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
             </div>
-        </nav>
+        </div>
     </div>
-
-   
-
-
-
-
-
-
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <div class="foot">
-                <div class="box5">
-                    <h3>B & B</h3>
-                    <p>
-                        Serves variety of food from <br>
-                        the continental cusines
-                        to <br> the fast food item.
-                    </p>
-
-                    <div class="logo2">
-                        <a href=""><img src="../images/facebook.png" alt=""></a>
-                        <a href=""><img src="../images/twitter.png" alt=""></a>
-                        <a href=""><img src="../images/instagram.png" alt=""></a>
-                    </div>
-
-                </div>
-                <div class="box6">
-                    <h4>B & B</h4>
-
-                    <a href="">About</a> <br>
-                    <a href="">Terms of use</a> <br>
-                    <a href="">Privacy Policy</a> <br>
-
-                </div>
-                <div class="box7">
-                    <h4>Support</h4>
-                    <a href=""> Support Centre</a> <br>
-                    <a href=""> Our Services</a> <br>
-                    <a href=""> Quick Chat</a>
-                </div>
-                <div class="box8">
-                    <h4>Contact</h4>
-                    <a href=""> Contact Number</a> <br>
-                    <a href=""> Location</a>
-                </div>
-
-            </div>
-            <div class="copyright">
-                <p>
-                    Copyright © 2021 B & B Co.
-                </p>
-            </div>
-
-            @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
 
-    @*@Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)*@
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

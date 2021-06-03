@@ -83,6 +83,7 @@ U:\SEMESTER - 02\OOP\RMS\RestaurantManagementSystem\RestaurantManagementSystem\o
 U:\SEMESTER - 02\OOP\RMS\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.CopyComplete
 U:\SEMESTER - 02\OOP\RMS\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.dll
 U:\SEMESTER - 02\OOP\RMS\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.pdb
+<<<<<<< HEAD
 
 U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\bin\RestaurantManagementSystem.dll.config
 U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\bin\RestaurantManagementSystem.dll
@@ -169,3 +170,5 @@ U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\Restaur
 U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\bin\roslyn\vbc.rsp
 U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\bin\roslyn\VBCSCompiler.exe
 U:\SEMESTER - 02\PROJECT_SEM_02\CS162S21GID17\RestaurantManagementSystem\RestaurantManagementSystem\bin\roslyn\VBCSCompiler.exe.config
+=======
+>>>>>>> parent of c984823 (2 Pages Integrated)

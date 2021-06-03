@@ -133,7 +133,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BranchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RestaurantAPIController.cs" />
@@ -200,14 +199,16 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Branch\AddBranch.cshtml" />
     <Content Include="Views\Branch\ListOfBranches.cshtml" />
+<<<<<<< HEAD
 
     <Content Include="Views\AccountPage\Login.cshtml" />
  <Content Include="Views\Branch\About.cshtml" />
 705796d8ccf74547af0ac45275772c0e51363e74
+=======
+>>>>>>> parent of c984823 (2 Pages Integrated)
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
