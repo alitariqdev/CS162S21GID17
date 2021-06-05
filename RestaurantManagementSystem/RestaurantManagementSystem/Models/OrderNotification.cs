@@ -5,10 +5,9 @@ using System.Web;
 
 namespace RestaurantManagementSystem.Models
 {
-    public class Payment
+    public class OrderNotification
     {
-        public int Id { get; set; }
-        public Double Amount { get; set; }
-        public Double Tax { get; set; }
+        public int OrderId { get; set; }
+        public String OrderDetails { get; set; }
     }
 }
