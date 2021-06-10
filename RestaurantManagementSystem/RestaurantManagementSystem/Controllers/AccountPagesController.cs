@@ -6,15 +6,22 @@ using System.Web.Mvc;
 
 namespace RestaurantManagementSystem.Controllers
 {
-    public class BranchController : Controller
+    public class AccountPagesController : Controller
     {
-        // GET: Branch
-        public ActionResult AddBranch()
+        // GET: AccountPages
+        public ActionResult CreateAnAccount()
         {
             return View();
-        }  public ActionResult ListOfBranches()
+        }
+
+
+
+        public ActionResult Login()
         {
             return View();
-        } 
+        }
+
+
+
     }
 }

@@ -12,15 +12,13 @@ namespace RestaurantManagementSystem.Controllers
     public class RestaurantAPIController : ApiController
     {
 
-        //List<Branch> BranchesList = new List<Branch>();
 
-
-
+        [HttpPost]
         public bool AddBranch(Branch obj)
         {
             try
             {
-                StreamWriter writer = new StreamWriter("C:/files/branches.txt", true);
+                StreamWriter writer = new StreamWriter("Files/branches.txt", true);
                 writer.WriteLine(obj.Name + ",");
                 //+"," + obj.DateOfBirth
                 writer.Flush();
@@ -30,17 +28,17 @@ namespace RestaurantManagementSystem.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("exception may ho nbeero");
+                Console.WriteLine("Error Exception");
                 return false;
             }
         }
-
+        [HttpGet]
         public List<Branch> ListOfBranches()
         {
 
             List<Branch> data = new List<Branch>();
 
-            StreamReader reader = new StreamReader("C:/files/branches.txt");
+            StreamReader reader = new StreamReader("Files/branches.txt");
 
             String line = reader.ReadLine();
 

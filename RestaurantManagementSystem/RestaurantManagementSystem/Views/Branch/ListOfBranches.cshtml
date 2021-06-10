@@ -1,1 +1,27 @@
 ﻿
+<div id="myTable"></div>
+
+@section scripts{
+    <script>
+
+        $.get( "https://localhost:44355/RestaurantAPI/Branch/AddBranch")
+			.done(function( data ) {
+				console.log(data);
+				var stg= "";
+
+				stg = "<table>";
+				var i;
+				for (i = 0; i < data.length; i++) {
+					stg = stg + "<tr><td>" + data[i].Name + "</td>";
+									@*+ "<td>"+ data[i].RegistrationNumber + "</td>"
+									+ "<td>"+ data[i].DateOfBirth + "</td></tr>"*@;
+				}
+
+				stg = stg+ "</table>";
+				console.log(stg);
+				$("#myTable").html(stg);
+
+		});
+    </script>
+
+}
