@@ -135,7 +135,7 @@
 
 
             <button class="submit" onclick="save()" type="submit"> Add</button>
-            <button class="cancel" type="cancel">Cancel</button>
+            <button class="cancel" >Cancel</button>
         </form>
     </div>
 </div>
@@ -168,7 +168,7 @@
 
 
             $.ajax({
-                url: "https://localhost:44355/RestaurantAPI/Branch/AddBranch",
+                url: "https://localhost:44355/api/Branch/AddBranch",
                 type: 'POST',
                 data: JSON.stringify(obj),
                 contentType: "application/json;charset=utf-8",

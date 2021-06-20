@@ -20,6 +20,10 @@ namespace RestaurantManagementSystem.Controllers
         {
             return View();
         }
+         public ActionResult AccounsList()
+        {
+            return View();
+        }
 
 
 

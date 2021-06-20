@@ -14,7 +14,7 @@
 
         body {
             font-family: "Poppins", sans-serif;
-            overflow: hidden;
+            overflow: auto;
         }
 
         .containers {
@@ -115,28 +115,82 @@
         <img class="image" src="../images/reservation.png" alt="reservation" />
     </div>
     <div class="right-container">
-        <form action="reservation.html">
+        @*<form >*@
             <h2>Create An Account</h2>
             <div class="name">
-                <input type="text" class="name" placeholder="First Name" />
+                <input id="fname" type="text" class="name" placeholder="First Name" />
             </div>
             <div class="name">
-                <input type="text" class="name" placeholder="Last Name" />
+                <input id="lname" type="text" class="name" placeholder="Last Name" />
             </div>
             <div class="contact">
-                <input type="text" class="contact" placeholder="Contact No" />
+                <input type="text" id="contact" class="contact" placeholder="Contact No" />
             </div>
             <div class="Email">
-                <input type="text" class="email" placeholder="Email" />
+                <input type="text" id="email" class="email" placeholder="Email" />
             </div>
 
             <div class="name">
-                <input type="password" class="email" placeholder="password" />
+                <input type="password" id="pass" class="email" placeholder="password" />
             </div>
 
-            <button class="submit" type="submit">Sign Up</button>
+            <button class="submit" onclick="save()">Sign Up</button>
 
     </div>
 
-    </form>
+    @*</form>*@
 </div>
+
+
+
+@section scripts{
+    <script>
+        
+        
+        function save() {
+    console.log("entered in save");
+    //alert("yd");
+
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var email = document.getElementById("email").value;
+            var contact = document.getElementById("contact").value;
+
+
+            var obj = {
+                FirstName: fname,
+                LastName: lname,
+                Contact: contact,
+                Email: email
+            };
+
+
+            var data = JSON.stringify(obj);
+             console.log(data);
+
+            $.ajax({
+                url: "http://localhost:44355/api/Account/AddAccount",
+                type: 'POST',
+                data: JSON.stringify(obj),
+                contenttype: "application/json;charset=utf-8",
+                success: function (data) {
+                    alert(data);
+                    console.log(data);
+                    console.log("data added");
+
+                },
+                error: function (data) {
+                    
+                    console.log("data eroor");
+
+                }
+            });
+
+    
+            //	window.location = "";
+
+        }
+        
+    </script>
+
+}

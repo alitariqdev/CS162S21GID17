@@ -5,8 +5,9 @@ using System.Web;
 
 namespace RestaurantManagementSystem.Models
 {
-    public class Reservation
+    public class Reservation : Person
     {
+        
         public String ReservationId { get; set; }
         public String PeopleCount { get; set; }
         public DateTime TimeOfReservation { get; set; }

@@ -45,10 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -129,14 +137,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountsTable.cs">
+      <DependentUpon>BranchModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BranchModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BranchModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BranchModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BranchModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BranchModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BranchModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="BranchTable.cs">
+      <DependentUpon>BranchModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AccountPagesController.cs" />
     <Compile Include="Controllers\BranchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\RestaurantAPIController.cs" />
+    <Compile Include="DBAccModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBAccModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBAccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBAccModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -163,11 +209,31 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BranchModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BranchModel.edmx</DependentUpon>
+      <LastGenOutput>BranchModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BranchModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BranchModel.edmx</DependentUpon>
+      <LastGenOutput>BranchModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\main-menu.css" />
+    <Content Include="DBAccModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DBAccModel.Context.cs</LastGenOutput>
+      <DependentUpon>DBAccModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="DBAccModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBAccModel.edmx</DependentUpon>
+      <LastGenOutput>DBAccModel.cs</LastGenOutput>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -186,6 +252,20 @@
     <Content Include="images\twitter.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="DBAccModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBAccModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DBAccModel.edmx.diagram">
+      <DependentUpon>DBAccModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="BranchModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BranchModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="BranchModel.edmx.diagram">
+      <DependentUpon>BranchModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -216,6 +296,8 @@
     <Content Include="Views\Branch\ListOfBranches.cshtml" />
     <Content Include="Views\AccountPages\Login.cshtml" />
     <Content Include="Views\AccountPages\CreateAnAccount.cshtml" />
+    <Content Include="Views\Branch\ReservationPage.cshtml" />
+    <Content Include="Views\AccountPages\AccounsList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -233,6 +315,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

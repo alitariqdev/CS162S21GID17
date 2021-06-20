@@ -14,17 +14,33 @@
     <div class="header">
         <nav class="navbar">
             <div class="logo">
-                <h1> <a href="index.html">B & B</a></h1>
+              
+                <h1> @Html.ActionLink("B & B", "Index", "Home")</h1>
+
             </div>
             <ul class="navopt">
-                <li><a href="">Business</a> </li>
-                <li><a href="">Pricing</a> </li>
-                <li><a href="">Features</a> </li>
+                @*<li><a href="">Home</a> </li>*@
+              <li>  @Html.ActionLink("Home", "Index", "Home")</li>
+                <li><a href="">Menu</a> </li>
+                <li><a href="">StoreLocator</a> </li>
+                <li><a href="">Contact Us</a> </li>
                 <li><a href="">About</a> </li>
+                <li><a href="">Order Online</a> </li>
+                <li>@Html.ActionLink("Reservation", "ReservationPage", "Branch")</li>
+
             </ul>
             <div class="btns">
-                <button type="submit" class="btn1">Login</button>
-                <button type="submit" class="btn2">Sign up</button>
+                <button type="submit" class="btn1">
+                    @Html.ActionLink("Login", "Login", "AccountPages")
+                </button>
+                
+                <button type="submit" class="btn2">
+                    @Html.ActionLink("Sign Up", "CreateAnAccount", "AccountPages")
+
+                </button>
+
+
+                
             </div>
         </nav>
     </div>

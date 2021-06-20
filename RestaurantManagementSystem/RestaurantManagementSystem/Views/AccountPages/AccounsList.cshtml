@@ -1,0 +1,25 @@
+﻿
+<div id="myTable"></div>
+
+@section scripts{
+    <script>
+    $.get("https://localhost:44355/Account/AllAccounts")
+            .done(function (data) {
+                console.log(data);
+                var stg = "";
+
+                stg = "<table>";
+                var i;
+                for (i = 0; i < data.length; i++) {
+                    stg = stg + "<tr><td>" + data[i].Email + "</td>"
+                        + "<td>" + data[i].FirstName + "</td>"
+                        + "<td>" + data[i].LastName + "</td></tr>";
+                }
+
+                stg = stg + "</table>";
+                console.log(stg);
+                $("#myTable").html(stg);
+
+            });</script>
+
+}

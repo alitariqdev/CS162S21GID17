@@ -18,11 +18,27 @@ namespace RestaurantManagementSystem.Controllers
         {
             try
             {
-                StreamWriter writer = new StreamWriter("Files/branches.txt", true);
-                writer.WriteLine(obj.Name + ",");
-                //+"," + obj.DateOfBirth
-                writer.Flush();
-                writer.Close();
+                //StreamWriter writer = new StreamWriter("Files/branches.txt", true);
+                //writer.WriteLine(obj.Name + ",");
+                ////+"," + obj.DateOfBirth
+                //writer.Flush();
+                //writer.Close();
+
+
+                AccountsDbEntities1 db = new AccountsDbEntities1();
+               
+                BranchTable bt = new BranchTable();
+
+
+
+                bt.Name = obj.Name;
+                db.BranchTables.Add(bt);
+              
+                db.SaveChanges();
+
+
+
+
 
                 return true;
             }
